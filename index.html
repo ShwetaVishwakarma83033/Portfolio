@@ -36,7 +36,6 @@ p{color:var(--muted);max-width:56ch}
 article{padding:clamp(22px,4vw,38px);background:#f0f4f8;border:1px solid var(--line);border-radius:14px}
 article:nth-child(2){background:#f4f0ea}
 article p:last-child{margin-bottom:0}
-.about{padding-block:clamp(54px,8vw,100px)}
 footer{border-top:1px solid var(--line);color:var(--muted)}
 @media(max-width:680px){.shell{width:calc(100% - 36px)}.hero,.cards{grid-template-columns:1fr}.art{min-height:220px;max-height:320px;width:100%;aspect-ratio:auto}header .shell{align-items:flex-start}.hero{padding-block:52px}.hero h1{font-size:clamp(3.1rem,13vw,5rem)}}
 
@@ -75,24 +74,6 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .skills dd{margin:4px 0 0;color:var(--muted)}
 .credentials{margin:0;padding-left:1.2em;color:var(--muted)}
 .credentials li+li{margin-top:10px}
-.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:30px}
-.service-card{display:flex;flex-direction:column;align-items:flex-start;padding:clamp(20px,2.8vw,32px)}
-.service-card p{margin:14px 0 20px}
-.service-form{margin-top:28px;padding:clamp(20px,4vw,38px);background:#f0f4f8;border:1px solid var(--line);border-radius:14px;scroll-margin-top:24px}
-.service-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}
-.service-fields label{display:grid;gap:5px;font-weight:650}
-.service-fields input,.service-fields select,.service-fields textarea{width:100%;min-width:0;font:inherit;color:var(--ink);background:var(--paper);border:1px solid #71879b;border-radius:6px;padding:8px 10px}
-.service-wide{grid-column:1/-1}
-.service-form-note{font-size:.9rem}
-.service-form button{font:inherit;font-weight:650;border:0;cursor:pointer;background:#355574}
-.service-form button:hover{background:#243447}
-.service-form{background:#edf3f8;border-color:#c2d1df;color:#243447}
-.service-form .service-form-note{color:#4b5d70}
-.service-form .service-fields :is(input,select,textarea){background:#f9fbfc;border-color:#71879b;color:#243447}
-.service-form :is(button,input,select,textarea):focus-visible{outline:2px solid #355574;outline-offset:3px}
-@media(max-width:600px){.service-fields{grid-template-columns:1fr}}
-.service-card a{margin-top:auto;color:var(--accent);font-weight:650}
-@media(max-width:760px){.service-grid{grid-template-columns:1fr;gap:14px}}
 #contact{background:var(--accent-surface)}
 #contact a{overflow-wrap:anywhere}
 @media(max-width:680px){.site-header nav{font-size:.9rem;gap:8px 15px}.columns,.projects-container{grid-template-columns:1fr}.site-header .shell{padding-block:17px}}
@@ -101,7 +82,7 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <body>
 <header class="site-header" id="home"><div class="shell">
 <a class="brand" href="#home">Shweta Vishwakarma</a>
-<nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#services">Services</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Credentials</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#home">About Us</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Credentials</a><a href="#contact">Contact</a></nav>
 </div></header>
 <main>
 <section class="hero shell" aria-labelledby="intro">
@@ -125,7 +106,7 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <label class="tool-filter">Tool <select id="project-tool"><option value="all">All tools</option><option value="power bi">Power BI</option><option value="sql">SQL</option><option value="python">Python</option><option value="machine learning">Machine Learning</option></select></label>
 <p class="project-status" role="status"></p>
 </div>
-<section class="project-group" aria-labelledby="linked-projects"><h3 id="linked-projects">Dashboards and linked projects</h3><div class="projects-container">
+<section class="project-group" aria-labelledby="linked-projects"><h3 id="linked-projects">Featured case studies</h3><div class="projects-container">
 <article class="project-card featured-project" id="ai-support-analysis" data-domain="customer-support" data-category="power bi">
 <p class="project-domain">Customer Support</p><p class="label">Power BI Challenge 42</p>
 <h4>AI vs. Human Support Analysis</h4>
@@ -141,7 +122,7 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <p>I cleaned and validated the ticket data, identifying 514 misclassified SLA records. I built a star schema with five dimension tables using Power Query and DAX, then compared like-for-like tickets across CSAT, SLA attainment, resolution time, repeat contacts, escalations, and cost.</p>
 <p>The two-page dashboard uses scorecards, heatmaps, treemaps, and driver analysis. Validating SLA classifications and comparing similar tickets helped avoid overstating AI’s impact.</p>
 </details>
-<a class="button" href="https://app.powerbi.com/reportEmbed?reportId=33564add-27a0-46bb-8d72-33b6b0929080&amp;autoAuth=true&amp;ctid=773f5abc-b720-43f2-a0ac-8f333fea30ad" target="_blank" rel="noopener">Open Power BI dashboard <span aria-hidden="true">↗</span></a>
+<a class="button" href="https://app.powerbi.com/reportEmbed?reportId=33564add-27a0-46bb-8d72-33b6b0929080&amp;autoAuth=true&amp;ctid=773f5abc-b720-43f2-a0ac-8f333fea30ad&amp;actionBarEnabled=true" target="_blank" rel="noopener">Open Power BI dashboard (sign-in required)</a>
 </article>
 <article class="project-card" id="ott-merger-analysis" data-domain="media-streaming" data-category="power bi · sql">
 <p class="project-domain">Media &amp; Streaming</p><p class="label">Power BI · SQL · Excel</p>
@@ -161,7 +142,6 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 </ul>
 <p>The four dashboard pages cover platform performance, user and subscription analysis, revenue trends, and content consumption. The case study recommends targeted content, mobile-first engagement, and personalized retention offers.</p>
 </details>
-<a class="button" href="https://app.powerbi.com/reportEmbed?reportId=390272cd-3e4b-41f7-892b-a6eacf1f5c94&amp;autoAuth=true&amp;ctid=773f5abc-b720-43f2-a0ac-8f333fea30ad&amp;actionBarEnabled=true" target="_blank" rel="noopener">Open Power BI dashboard <span aria-hidden="true">↗</span></a>
 </article>
 <article class="project-card" id="air-purifier-market-research" data-domain="environment" data-category="sql · power bi · power query">
 <p class="project-domain">Environment &amp; Market Research</p><p class="label">Power BI · DAX · SQL · Power Query</p>
@@ -179,7 +159,6 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <p>In Power BI Desktop, open the project’s .pbix file and use the slicers to explore dates, locations, pollutants, and disease categories.</p>
 </details>
 <div class="actions">
-<a class="button" href="https://app.powerbi.com/reportEmbed?reportId=81f569ac-7574-4f97-b38c-6523dbc6ea1d&amp;autoAuth=true&amp;ctid=773f5abc-b720-43f2-a0ac-8f333fea30ad" target="_blank" rel="noopener">Open Power BI dashboard <span aria-hidden="true">↗</span></a>
 <a href="https://drive.google.com/drive/folders/1SkGbkzQpn111ALNP-QJQ8glr0Q2ktGGq?usp=sharing" target="_blank" rel="noopener">Project files</a>
 </div>
 </article>
@@ -201,7 +180,6 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 </ul>
 <p>The dashboard compares city performance, passenger trends, and revenue. I also flagged unusual values for review to improve the reliability of the reporting.</p>
 </details>
-<a class="button" href="https://app.powerbi.com/reportEmbed?reportId=bfd750f1-c596-4355-8988-c1671020289b&amp;autoAuth=true&amp;ctid=773f5abc-b720-43f2-a0ac-8f333fea30ad" target="_blank" rel="noopener">Open Power BI dashboard <span aria-hidden="true">↗</span></a>
 </article>
 <article class="project-card" id="vehicle-routing-optimization" data-domain="supply-chain" data-category="python">
 <p class="project-domain">Logistics &amp; Supply Chain</p><p class="label">Python · Google OR-Tools · TSPLIB</p>
@@ -240,7 +218,6 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 </ul>
 <p>The two dashboard pages use DAX measures, drill-downs, and filters to explore stock levels, pricing, supplier performance, and warehouse load. I recommended prioritizing the 262 products below reorder point, monitoring suppliers with long lead times, rebalancing stock across countries, and promoting or rotating high-value, slow-moving inventory.</p>
 </details>
-<a class="button" href="https://app.powerbi.com/reportEmbed?reportId=0dd4a341-7478-42a9-992e-99084b188bd1&amp;autoAuth=true&amp;ctid=773f5abc-b720-43f2-a0ac-8f333fea30ad" target="_blank" rel="noopener">Open Power BI dashboard <span aria-hidden="true">↗</span></a>
 </article>
 </div></section>
 <section class="project-group" aria-labelledby="more-projects"><h3 id="more-projects">More projects</h3><div class="projects-container">
@@ -249,9 +226,7 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <article class="project-card" id="hr-attrition" data-domain="hr" data-category="sql · python"><p class="project-domain">Human Resources</p><p class="label">SQL · Python</p><h4>HR Attrition Analysis</h4><p>Analyzed employee attrition patterns using SQL and Python to identify key drivers and recommend retention strategies.</p></article>
 </div></section>
 </div></section>
-<section class="section" id="about"><div class="shell columns">
-<div><h2>About me</h2><p>I’m a data analyst with experience in data preparation, KPI reporting, and dashboard development. At Creativelipi Web Tech Pvt. Ltd., I track project and catalogue data, review it for quality issues, and present delivery updates to clients.</p></div>
-<div id="skills"><h2>Technical skills</h2><dl class="skills">
+<section class="section" id="skills"><div class="shell"><h2>Technical skills</h2><dl class="skills">
 <div><dt>SQL</dt><dd>Joins, CTEs, subqueries, extraction, and validation</dd></div>
 <div><dt>Power BI and Tableau</dt><dd>KPI dashboards, visual reporting, and data models</dd></div>
 <div><dt>Excel and Google Sheets</dt><dd>Pivot tables, lookup formulas, and Power Query</dd></div>
@@ -259,7 +234,7 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <div><dt>Cloud data platforms</dt><dd>Snowflake and Microsoft Azure</dd></div>
 <div><dt>Machine Learning and Statistics</dt><dd>Predictive modeling and statistical analysis</dd></div>
 <div><dt>Client Onboarding</dt></div>
-</dl></div>
+</dl>
 </div></section>
 <section class="section" id="experience"><div class="shell columns"><h2>Experience</h2><div>
 <article class="entry"><p class="label">January 2026 – Present</p><h3>Project Delivery Executive</h3><p><strong>Creativelipi Web Tech Pvt. Ltd.</strong></p><p>Maintain Excel and Google Sheets trackers, validate catalogue and product data, and use AI-assisted reviews to flag missing or inconsistent records. Coordinate fixes with internal teams and present updates to clients.</p></article>
@@ -269,40 +244,6 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <section class="section" id="certifications"><div class="shell columns">
 <div><h2>Credentials</h2><ul class="credentials"><li>Data Analytics Training, Centum Foundation through Accenture</li><li>Machine Learning Training, SoftPro India through IAIP</li><li>PCAP Python Certification, MISAC</li><li>Junior ML Engineer, ML Engineer, and Product Lead, Omdena</li></ul></div>
 <div id="education"><h2>Education</h2><p><strong>Master of Computer Application</strong><br>R.S.M.T College, Varanasi · 2022–2024</p><p><strong>Bachelor of Computer Application</strong><br>J.N.M College, Varanasi · 2018–2021</p></div>
-</div></section>
-<section class="section" id="services" aria-labelledby="services-heading"><div class="shell">
-<h2 id="services-heading">Services</h2>
-<p>I help businesses make sense of their data, prepare it for reporting, and build websites that clearly present their work.</p>
-<div class="service-grid">
-<article class="service-card">
-<h3>Data Analysis</h3>
-<p>Explore trends, track business KPIs, and turn your findings into Power BI dashboards or Excel reports.</p>
-<a href="#service-request" data-service="Data Analysis">Ask about data analysis <span aria-hidden="true">↗</span></a>
-</article>
-<article class="service-card">
-<h3>Data Cleaning</h3>
-<p>Remove duplicates, standardize formats, and flag missing or inconsistent values so your spreadsheets and datasets are ready for reporting.</p>
-<a href="#service-request" data-service="Data Cleaning">Ask about data cleaning <span aria-hidden="true">↗</span></a>
-</article>
-<article class="service-card">
-<h3>Website Development</h3>
-<p>Build a responsive portfolio, landing page, or small-business website that works on phones and desktops.</p>
-<a href="#service-request" data-service="Website Development">Ask about website development <span aria-hidden="true">↗</span></a>
-</article>
-</div>
-<form class="service-form" id="service-request" method="post" action="https://formsubmit.co/rohitak120@gmail.com" aria-labelledby="service-request-title">
-<h3 id="service-request-title">Request a service</h3>
-<input type="hidden" name="_cc" value="shweta.vishwakarma83033@gmail.com">
-<input type="hidden" name="_subject" value="New portfolio service request">
-<div class="service-fields">
-<label>Your name <input name="name" autocomplete="name" required maxlength="100"></label>
-<label>Your email <input type="email" name="email" autocomplete="email" required maxlength="254"></label>
-<label class="service-wide">Service <select id="request-service" name="service" required><option value="">Choose a service</option><option>Data Analysis</option><option>Data Cleaning</option><option>Website Development</option></select></label>
-<label class="service-wide">Project details <textarea name="message" rows="5" required maxlength="3000" placeholder="Tell me what you need and your preferred timeline."></textarea></label>
-</div>
-<p class="service-form-note">FormSubmit processes your request and sends your contact details and message by email.</p>
-<button type="submit" class="button">Send request <span aria-hidden="true">↗</span></button>
-</form>
 </div></section>
 <section class="section" id="contact"><div class="shell"><h2>Get in touch</h2><p>I’m open to data analyst roles in business reporting, dashboard development, and decision support.</p>
 <div class="actions"><a class="button" href="mailto:shweta.vishwakarma83033@gmail.com">Email me</a><a href="https://www.linkedin.com/in/shweta-vishwakarma-data-analyst">LinkedIn</a><a href="https://github.com/ShwetaVishwakarma83033">GitHub</a></div></div></section>
@@ -342,12 +283,6 @@ domains.forEach(button => {
 tool.addEventListener('change', filterProjects);
 filterProjects();
 controls.hidden = false;
-const serviceSelect = document.querySelector('#request-service');
-document.querySelectorAll('[data-service]').forEach(link => {
-  link.addEventListener('click', () => {
-    serviceSelect.value = link.dataset.service;
-  });
-});
 </script>
 </body>
 </html>
