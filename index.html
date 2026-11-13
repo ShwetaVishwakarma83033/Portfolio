@@ -6,7 +6,7 @@
 <meta name="description" content="Shweta Vishwakarma's data analytics portfolio, featuring Power BI dashboards, SQL and Python projects, and reporting experience.">
 <title>Shweta Vishwakarma | Data Analyst</title>
 <style>
-:root{color-scheme:light;--paper:#faf8f4;--ink:#243447;--muted:#4b5d70;--accent-surface:#e5edf4;--line:#d1dce6;--accent:#355574;--serif:"Instrument Serif",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
+:root{color-scheme:light;--paper:#faf8f4;--ink:#183a37;--muted:#465e59;--accent-surface:#e0efe9;--line:#c4dcd3;--accent:#07645d;--serif:"Instrument Serif",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 var(--sans)}
 a{color:inherit;text-underline-offset:.25em}
@@ -14,10 +14,12 @@ a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .shell{width:min(1120px,calc(100% - 64px));margin:auto}
 header .shell,footer .shell{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:24px}
 header{border-bottom:1px solid var(--line)}
+.site-header .brand{font-family:var(--serif);font-size:1.45rem;line-height:1.15;font-weight:600;color:var(--accent);letter-spacing:-.025em}
+main{background:radial-gradient(ellipse 65% 420px at 87% 0%,var(--accent-surface),transparent 100%)}
 nav{display:flex;flex-wrap:wrap;gap:clamp(14px,3vw,34px)}
 nav a,.brand{text-decoration:none;font-weight:650}
 nav a:hover,.brand:hover{text-decoration:underline}
-.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,7vw,100px);align-items:center;padding-block:clamp(65px,10vw,140px)}
+.hero{padding-block:clamp(65px,10vw,140px)}
 .label{font-size:.77rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--accent);margin:0 0 16px}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.05;margin:0;letter-spacing:-.045em}
 h1{font-size:clamp(3.5rem,8.3vw,7.6rem)}
@@ -27,17 +29,13 @@ p{color:var(--muted);max-width:56ch}
 .hero p:not(.label){margin:22px 0 28px}
 .button{display:inline-flex;align-items:center;gap:16px;background:var(--accent);color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:650}
 .button:hover{background:var(--ink)}
-.art{min-height:320px;aspect-ratio:1.06;border-radius:48% 48% 18px 18px;background:var(--accent-surface);display:grid;place-items:center;overflow:hidden;position:relative}
-.art::before,.art::after{content:"";position:absolute;border:1px solid #a5b8ca;border-radius:50%;width:71%;height:71%;transform:rotate(-28deg) scaleX(.73)}
-.art::after{transform:rotate(33deg) scaleX(.73)}
-.monogram{font:italic clamp(4.5rem,11vw,9rem)/1 var(--serif);letter-spacing:-.12em;padding-right:.12em;color:var(--accent);z-index:1}
 .work{border-block:1px solid var(--line);padding-block:clamp(54px,7vw,90px)}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:34px}
-article{padding:clamp(22px,4vw,38px);background:#f0f4f8;border:1px solid var(--line);border-radius:14px}
+article{padding:clamp(22px,4vw,38px);background:#eef6f2;border:1px solid var(--line);border-radius:14px}
 article:nth-child(2){background:#f4f0ea}
 article p:last-child{margin-bottom:0}
 footer{border-top:1px solid var(--line);color:var(--muted)}
-@media(max-width:680px){.shell{width:calc(100% - 36px)}.hero,.cards{grid-template-columns:1fr}.art{min-height:220px;max-height:320px;width:100%;aspect-ratio:auto}header .shell{align-items:flex-start}.hero{padding-block:52px}.hero h1{font-size:clamp(3.1rem,13vw,5rem)}}
+@media(max-width:680px){.shell{width:calc(100% - 36px)}.cards{grid-template-columns:1fr}header .shell{align-items:flex-start}.hero{padding-block:52px}.hero h1{font-size:clamp(3.1rem,13vw,5rem)}}
 
 .site-header .shell{flex-wrap:wrap}
 .hero .actions,.actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px}
@@ -77,6 +75,14 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 #contact{background:var(--accent-surface)}
 #contact a{overflow-wrap:anywhere}
 @media(max-width:680px){.site-header nav{font-size:.9rem;gap:8px 15px}.columns,.projects-container{grid-template-columns:1fr}.site-header .shell{padding-block:17px}}
+
+.support-explorer{margin-top:24px;padding:clamp(16px,3vw,28px);background:var(--paper);border:1px solid var(--line);border-radius:12px}
+.support-explorer label{display:block;font-weight:650;margin:12px 0 5px}
+.support-explorer select{max-width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--accent);border-radius:6px;padding:7px 9px}
+.support-explorer meter{display:block;width:min(100%,320px);height:16px;accent-color:var(--accent)}
+.support-explorer h6{font-size:1rem;margin:18px 0 8px}
+.support-explorer h5{font-size:1.15rem;margin:0}
+.support-explorer small{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -87,7 +93,6 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <main>
 <section class="hero shell" aria-labelledby="intro">
 <div><p class="label">Data Analyst</p><h1 id="intro">Shweta<br>Vishwakarma</h1><p>I clean and validate data, build dashboards, and use reporting to help teams understand performance. My toolkit includes SQL, Python, Power BI, and Excel.</p><div class="actions"><a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a href="#contact">Get in touch</a></div></div>
-<div class="art" aria-hidden="true"><span class="monogram">SV</span></div>
 </section>
 <section class="work" id="projects" aria-labelledby="work-heading"><div class="shell">
 <h2 id="work-heading">Selected projects</h2>
@@ -122,8 +127,34 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <p>I cleaned and validated the ticket data, identifying 514 misclassified SLA records. I built a star schema with five dimension tables using Power Query and DAX, then compared like-for-like tickets across CSAT, SLA attainment, resolution time, repeat contacts, escalations, and cost.</p>
 <p>The two-page dashboard uses scorecards, heatmaps, treemaps, and driver analysis. Validating SLA classifications and comparing similar tickets helped avoid overstating AI’s impact.</p>
 </details>
-<iframe title="AI vs Human Support" width="1140" height="541" src="https://app.powerbi.com/reportEmbed?reportId=33564add-27a0-46bb-8d72-33b6b0929080&amp;autoAuth=true&amp;ctid=773f5abc-b720-43f2-a0ac-8f333fea30ad&amp;actionBarEnabled=true" loading="lazy" allowfullscreen style="display:block;width:100%;height:auto;aspect-ratio:1140 / 541.25;border:0"></iframe>
-<p>Power BI sign-in and report access are required to view the embedded dashboard.</p>
+<section class="support-explorer" aria-labelledby="support-explorer-title">
+<h5 id="support-explorer-title">Explore the support findings</h5>
+<small>Interactive summary of the case-study figures.</small>
+<div id="support-view-controls" hidden>
+<label for="support-view">Choose a view</label>
+<select id="support-view">
+<option value="handoffs">Handoffs and costs</option>
+<option value="ai">AI-only performance</option>
+<option value="savings">Savings opportunities</option>
+</select>
+</div>
+<div aria-live="polite" id="support-views">
+<div data-support-view="handoffs">
+<h6>AI-to-human handoffs</h6>
+<p>Share of all tickets <strong>29%</strong><meter aria-label="Share of all tickets" min="0" max="100" value="29"></meter></p>
+<p>Share of total costs <strong>58%</strong><meter aria-label="Share of total costs" min="0" max="100" value="58"></meter></p>
+<p>Handoffs made up nearly a third of tickets and more than half of total costs.</p>
+</div>
+<div data-support-view="ai">
+<h6>AI-only performance</h6>
+<p><strong>4.40</strong> customer satisfaction score · <strong>95.6%</strong> SLA attainment · <strong>€1.46</strong> cost per ticket</p>
+</div>
+<div data-support-view="savings">
+<h6>Estimated savings</h6>
+<p><strong>€4K–€12K</strong> in potential savings from better routing and process improvements. The analysis flagged late handoffs and email queue delays.</p>
+</div>
+</div>
+</section>
 </article>
 <article class="project-card" id="ott-merger-analysis" data-domain="media-streaming" data-category="power bi · sql">
 <p class="project-domain">Media &amp; Streaming</p><p class="label">Power BI · SQL · Excel</p>
@@ -143,6 +174,19 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 </ul>
 <p>The four dashboard pages cover platform performance, user and subscription analysis, revenue trends, and content consumption. The case study recommends targeted content, mobile-first engagement, and personalized retention offers.</p>
 </details>
+
+<section class="support-explorer" data-project-explorer aria-labelledby="ott-merger-analysis-explorer-title">
+<h5 id="ott-merger-analysis-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="ott-merger-analysis-view">Choose a view</label>
+<select id="ott-merger-analysis-view"><option value="0">Platform audience</option><option value="1">Retention</option><option value="2">Subscription and viewing</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>Platform audience</h6><p>JotStar had 76.29% of users and LioCinema had 23.71%.</p><p>JotStar user share <strong>76.29%</strong><meter aria-label="JotStar user share" min="0" max="100" value="76.29"></meter></p><p>LioCinema user share <strong>23.71%</strong><meter aria-label="LioCinema user share" min="0" max="100" value="23.71"></meter></p></div>
+<div data-project-view="1"><h6>Retention</h6><p>Retention was 61% and churn was 39%.</p><p>Retention <strong>61%</strong><meter aria-label="Retention" min="0" max="100" value="61"></meter></p><p>Churn <strong>39%</strong><meter aria-label="Churn" min="0" max="100" value="39"></meter></p></div>
+<div data-project-view="2"><h6>Subscription and viewing</h6><p>Free plans accounted for 51% of users. Mobile accounted for 61% of consumption.</p></div>
+</div>
+</section>
 </article>
 <article class="project-card" id="air-purifier-market-research" data-domain="environment" data-category="sql · power bi · power query">
 <p class="project-domain">Environment &amp; Market Research</p><p class="label">Power BI · DAX · SQL · Power Query</p>
@@ -162,6 +206,19 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <div class="actions">
 <a href="https://drive.google.com/drive/folders/1SkGbkzQpn111ALNP-QJQ8glr0Q2ktGGq?usp=sharing" target="_blank" rel="noopener">Project files</a>
 </div>
+
+<section class="support-explorer" data-project-explorer aria-labelledby="air-purifier-market-research-explorer-title">
+<h5 id="air-purifier-market-research-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="air-purifier-market-research-view">Choose a view</label>
+<select id="air-purifier-market-research-view"><option value="0">Air quality</option><option value="1">Health and EV adoption</option><option value="2">Demand and city priorities</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>Air quality</h6><p>Air quality was generally worse in winter and post-harvest months. Delhi showed limited weekend improvement.</p></div>
+<div data-project-view="1"><h6>Health and EV adoption</h6><p>The analysis compared PM2.5 and PM10 with health indicators. Delhi and Chandigarh illustrate how higher EV adoption can coexist with poor air quality.</p></div>
+<div data-project-view="2"><h6>Demand and city priorities</h6><p>Search interest rose during severe AQI episodes. The risk score highlighted Byrnihat, Delhi, and Hajipur for further review.</p></div>
+</div>
+</section>
 </article>
 <article class="project-card" id="good-cabs-analysis" data-domain="mobility" data-category="sql · excel · power bi">
 <p class="project-domain">Mobility</p><p class="label">Power BI · SQL · Excel</p>
@@ -181,6 +238,19 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 </ul>
 <p>The dashboard compares city performance, passenger trends, and revenue. I also flagged unusual values for review to improve the reliability of the reporting.</p>
 </details>
+
+<section class="support-explorer" data-project-explorer aria-labelledby="good-cabs-analysis-explorer-title">
+<h5 id="good-cabs-analysis-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="good-cabs-analysis-view">Choose a view</label>
+<select id="good-cabs-analysis-view"><option value="0">City performance</option><option value="1">Repeat passengers</option><option value="2">Revenue trends</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>City performance</h6><p>Jaipur was a leading market for trips and revenue. Kochi had the highest passenger rating at 8.52.</p></div>
+<div data-project-view="1"><h6>Repeat passengers</h6><p>Repeat passengers accounted for 50.58% of revenue.</p><p>Revenue from repeat passengers <strong>50.58%</strong><meter aria-label="Revenue from repeat passengers" min="0" max="100" value="50.58"></meter></p></div>
+<div data-project-view="2"><h6>Revenue trends</h6><p>Average revenue per kilometre was ₹13.28. Monthly revenue declined toward June.</p></div>
+</div>
+</section>
 </article>
 <article class="project-card" id="vehicle-routing-optimization" data-domain="supply-chain" data-category="python">
 <p class="project-domain">Logistics &amp; Supply Chain</p><p class="label">Python · Google OR-Tools · TSPLIB</p>
@@ -200,6 +270,19 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 <a class="button" href="https://github.com/ShwetaVishwakarma83033/-Delhivery-Vehicle-Routing-Optimization-CVRP-A-n32-k5-/blob/main/outputs/route_visual.png" target="_blank" rel="noopener">View optimized routes <span aria-hidden="true">↗</span></a>
 <a href="https://github.com/ShwetaVishwakarma83033/-Delhivery-Vehicle-Routing-Optimization-CVRP-A-n32-k5-/" target="_blank" rel="noopener">View project on GitHub</a>
 </div>
+
+<section class="support-explorer" data-project-explorer aria-labelledby="vehicle-routing-optimization-explorer-title">
+<h5 id="vehicle-routing-optimization-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="vehicle-routing-optimization-view">Choose a view</label>
+<select id="vehicle-routing-optimization-view"><option value="0">Fleet utilization</option><option value="1">Route distance</option><option value="2">Network planning</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>Fleet utilization</h6><p>Five vehicles served all 31 customers, carrying 410 of 500 available units.</p><p>Fleet capacity used <strong>82%</strong><meter aria-label="Fleet capacity used" min="0" max="100" value="82"></meter></p></div>
+<div data-project-view="1"><h6>Route distance</h6><p>The optimized routes covered 784 benchmark distance units. Individual vehicle loads ranged from 44 to 98 units.</p></div>
+<div data-project-view="2"><h6>Network planning</h6><p>The route map gives planners a starting point for evaluating customer clusters and potential micro-hub locations.</p></div>
+</div>
+</section>
 </article>
 <article class="project-card" id="inventory-management-analysis" data-domain="supply-chain" data-category="power bi">
 <p class="project-domain">Logistics &amp; Supply Chain</p><p class="label">FP20 Analytics Challenge 25 · Power BI · DAX</p>
@@ -219,12 +302,61 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 </ul>
 <p>The two dashboard pages use DAX measures, drill-downs, and filters to explore stock levels, pricing, supplier performance, and warehouse load. I recommended prioritizing the 262 products below reorder point, monitoring suppliers with long lead times, rebalancing stock across countries, and promoting or rotating high-value, slow-moving inventory.</p>
 </details>
+
+<section class="support-explorer" data-project-explorer aria-labelledby="inventory-management-analysis-explorer-title">
+<h5 id="inventory-management-analysis-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="inventory-management-analysis-view">Choose a view</label>
+<select id="inventory-management-analysis-view"><option value="0">Stock levels</option><option value="1">Supplier performance</option><option value="2">Restocking priorities</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>Stock levels</h6><p>Of 5,000 products, 262 were below reorder point and 774 were out of stock.</p></div>
+<div data-project-view="1"><h6>Supplier performance</h6><p>Average lead time was 14.96 days. SUP041 had the longest lead time at 17.3 days.</p></div>
+<div data-project-view="2"><h6>Restocking priorities</h6><p>Restocking peaked in March, May, and October. Recommendations included prioritizing items below reorder point and rebalancing stock across countries.</p></div>
+</div>
+</section>
 </article>
 </div></section>
 <section class="project-group" aria-labelledby="more-projects"><h3 id="more-projects">More projects</h3><div class="projects-container">
-<article class="project-card" id="crop-rotation" data-domain="agriculture" data-category="omdena · machine learning"><p class="project-domain">Agriculture</p><p class="label">Omdena · Machine learning</p><h4>Crop Rotation in Rwanda</h4><p>Worked with a global team of 40+ contributors to explore how crop rotation relates to soil health and crop yield. Contributed in ML engineering and product leadership roles.</p></article>
-<article class="project-card" id="sales-forecasting" data-domain="sales" data-category="python · machine learning"><p class="project-domain">Sales</p><p class="label">Python · Machine learning</p><h4>Sales Forecasting Model</h4><p>Built machine learning models to forecast sales trends using historical data, seasonal patterns, and market indicators.</p></article>
-<article class="project-card" id="hr-attrition" data-domain="hr" data-category="sql · python"><p class="project-domain">Human Resources</p><p class="label">SQL · Python</p><h4>HR Attrition Analysis</h4><p>Analyzed employee attrition patterns using SQL and Python to identify key drivers and recommend retention strategies.</p></article>
+<article class="project-card" id="crop-rotation" data-domain="agriculture" data-category="omdena · machine learning"><p class="project-domain">Agriculture</p><p class="label">Omdena · Machine learning</p><h4>Crop Rotation in Rwanda</h4><p>Worked with a global team of 40+ contributors to explore how crop rotation relates to soil health and crop yield. Contributed in ML engineering and product leadership roles.</p>
+<section class="support-explorer" data-project-explorer aria-labelledby="crop-rotation-explorer-title">
+<h5 id="crop-rotation-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="crop-rotation-view">Choose a view</label>
+<select id="crop-rotation-view"><option value="0">Research focus</option><option value="1">Team and contribution</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>Research focus</h6><p>Explored how crop rotation relates to soil health and crop yield in Rwanda.</p></div>
+<div data-project-view="1"><h6>Team and contribution</h6><p>Worked with a global team of 40+ contributors in ML engineering and product leadership roles.</p></div>
+</div>
+</section>
+</article>
+<article class="project-card" id="sales-forecasting" data-domain="sales" data-category="python · machine learning"><p class="project-domain">Sales</p><p class="label">Python · Machine learning</p><h4>Sales Forecasting Model</h4><p>Built machine learning models to forecast sales trends using historical data, seasonal patterns, and market indicators.</p>
+<section class="support-explorer" data-project-explorer aria-labelledby="sales-forecasting-explorer-title">
+<h5 id="sales-forecasting-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="sales-forecasting-view">Choose a view</label>
+<select id="sales-forecasting-view"><option value="0">Objective</option><option value="1">Inputs</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>Objective</h6><p>Forecast sales trends with machine learning.</p></div>
+<div data-project-view="1"><h6>Inputs</h6><p>The models used historical sales data, seasonal patterns, and market indicators.</p></div>
+</div>
+</section>
+</article>
+<article class="project-card" id="hr-attrition" data-domain="hr" data-category="sql · python"><p class="project-domain">Human Resources</p><p class="label">SQL · Python</p><h4>HR Attrition Analysis</h4><p>Analyzed employee attrition patterns using SQL and Python to identify key drivers and recommend retention strategies.</p>
+<section class="support-explorer" data-project-explorer aria-labelledby="hr-attrition-explorer-title">
+<h5 id="hr-attrition-explorer-title">Explore this project</h5>
+<div data-explorer-controls hidden>
+<label for="hr-attrition-view">Choose a view</label>
+<select id="hr-attrition-view"><option value="0">Analysis</option><option value="1">Business objective</option></select>
+</div>
+<div aria-live="polite">
+<div data-project-view="0"><h6>Analysis</h6><p>Used SQL and Python to examine patterns in employee attrition.</p></div>
+<div data-project-view="1"><h6>Business objective</h6><p>Identify key drivers of attrition and recommend retention strategies.</p></div>
+</div>
+</section>
+</article>
 </div></section>
 </div></section>
 <section class="section" id="skills"><div class="shell"><h2>Technical skills</h2><dl class="skills">
@@ -284,6 +416,30 @@ domains.forEach(button => {
 tool.addEventListener('change', filterProjects);
 filterProjects();
 controls.hidden = false;
+
+const supportView = document.querySelector('#support-view');
+const supportPanels = document.querySelectorAll('[data-support-view]');
+function updateSupportView() {
+  supportPanels.forEach(panel => {
+    panel.hidden = panel.dataset.supportView !== supportView.value;
+  });
+}
+supportView.addEventListener('change', updateSupportView);
+updateSupportView();
+document.querySelector('#support-view-controls').hidden = false;
+
+document.querySelectorAll('[data-project-explorer]').forEach(explorer => {
+  const select = explorer.querySelector('select');
+  const panels = explorer.querySelectorAll('[data-project-view]');
+  function updateView() {
+    panels.forEach(panel => {
+      panel.hidden = panel.dataset.projectView !== select.value;
+    });
+  }
+  select.addEventListener('change', updateView);
+  updateView();
+  explorer.querySelector('[data-explorer-controls]').hidden = false;
+});
 </script>
 </body>
 </html>
